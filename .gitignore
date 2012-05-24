@@ -73,3 +73,7 @@ packages/
 *.lai
 *.la
 *.a
+
+# Vim temp files
+*~
+*.swp
