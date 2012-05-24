@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #OS junk files
 [Tt]humbs.db
 *.DS_Store
@@ -59,3 +60,16 @@ packages/
 # visual studio database projects
 *.dbmdl
 
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
