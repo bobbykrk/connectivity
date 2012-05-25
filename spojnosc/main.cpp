@@ -187,8 +187,8 @@ int main(){
 	// maksymalny przep³yw od wierzcho³ka 1 do wierzcho³ka n
 	//int res = maxflow(1,n,n);
 	res = max_connectivity(n);
-	printf("%d", res);
+	printf("%d\n", res);
 
-	scanf(" ");
+	//scanf(" ");
 	return 0;
 }
