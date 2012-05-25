@@ -142,14 +142,14 @@ int tranform_flow(int s, int t, int n){
 	}
 	//test_print(cnt);
 	for(int i=0;i<=n;i++){
-		for(int j=0;j<graph_in[i].size();j++){
+		for(int j=0;j<graph[i].size();j++){
 			// do wierzcho³ka i dochodzi wierzcho³ek graph[i][j] (graph[i][j] ~> i)
-			cap[new_nodes[graph_in[i][j]*2+1]][new_nodes[i*2]] = 1;
+			cap[new_nodes[graph[i][j]*2+1]][new_nodes[i*2]] = 1;
 			//printf("in: %d -> %d\n",new_nodes[graph_in[i][j]*2+1], new_nodes[i*2]);
 		}
-		for(int j=0;j<graph_out[i].size();j++){
+		for(int j=0;j<graph[i].size();j++){
 			// do wierzcho³ka graph[i][j] dochodzi wierzcho³ek i (i ~> graph[i][j] )
-			cap[new_nodes[i*2+1]][new_nodes[graph_out[i][j]*2]] = 1;
+			cap[new_nodes[i*2+1]][new_nodes[graph[i][j]*2]] = 1;
 			//printf("out: %d -> %d\n",new_nodes[i*2+1], new_nodes[graph_out[i][j]*2]);
 		}
 	}
