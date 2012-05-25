@@ -14,7 +14,7 @@ int pv[MAXN];			// poprzedni wierzcho³ek
 int q[MAXN];
 int q_front,q_back;
 
-vector<int> graph[MAXN], graph_in[MAXN], graph_out[MAXN];	// graf reprezentowany przez listê s¹siedztwa, grafy krawêdzi wchodzi¹cych i wychodz¹cych
+vector<int> graph[MAXN], graph_in[MAXN], graph_out[MAXN];	// graf reprezentowany przez listê s¹siedztwa, grafy krawêdzi wchodz¹cych i wychodz¹cych
 int node_nums[MAXN], new_nodes[MAXN];		// nowe numery wierzcho³ków 
 
 
@@ -188,6 +188,5 @@ int main(){
 	printf("%d", res);
 
 	scanf(" ");
-
 	return 0;
 }
