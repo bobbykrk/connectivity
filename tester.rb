@@ -18,7 +18,7 @@ dir.each do |file_name|
     if(res_line == check_res_line)
       print "\t" + "ok"
     else
-      print "\t" + "error! jest: " + res_line + " powinno byc: " + check_res_line 
+      print "\t" + "error! jest: " + res_line.chop + " powinno byc: " + check_res_line.chop 
     end 
     puts " czas: " + time.to_s
     res.close
