@@ -47,7 +47,7 @@ DZIA£A: daje 2
 -----
 GRAFY Z PRZEWÊ¯ENIEM
 -----
-NIE DZIA£A: powinno daæ 1, daje 3
+DZIA£A: daje 1
 (przewê¿enie na wierzcho³ku 3)
 7 11
 1 2
@@ -62,7 +62,7 @@ NIE DZIA£A: powinno daæ 1, daje 3
 4 5
 5 6
 
-NIE DZIA£A: powinno daæ 1, daje 2
+DZIA£A: daje 1
 (przewê¿enie na wierzcho³ku 3)
 5 6
 1 2
@@ -80,7 +80,7 @@ DZIA£A: daje 1
 3 4
 3 5
 
-NIE DZIA£A: powinno daæ 1, daje 2
+DZIA£A: daje 1
 (przewê¿enie na wierzcho³ku 3)
 5 5
 1 2
@@ -89,7 +89,7 @@ NIE DZIA£A: powinno daæ 1, daje 2
 3 4
 3 5
 
-NIE DZIA£A: powinno daæ 1, daje 2
+DZIA£A: daje 1
 (przewê¿enie na wierzcho³ku 3)
 4 4
 1 2
@@ -106,7 +106,7 @@ DZIA£A: daje 1
 -----
 GRAFY ZUPE£NE - trzeba dodaæ jakieœ sprawdzenie, je¿eli wynik jest o jeden mniejszy od liczby wierzcho³ków
 -----
-NIE DZIA£A: nie ma rozwi¹zania, daje 3
+DZIA£A: nie ma rozwi¹zania, daje 3
 4 6
 1 2
 2 3
@@ -115,7 +115,7 @@ NIE DZIA£A: nie ma rozwi¹zania, daje 3
 1 3
 2 4
 
-NIE DZIA£A: nie ma rozwi¹zania, daje 5
+DZIA£A: nie ma rozwi¹zania, daje 5
 6 15
 1 2
 1 3
@@ -156,7 +156,7 @@ DZIA£A: daje 2
 3 2
 3 4
 
-NIE DZIA£A: daje 3 zamiast 2
+DZIA£A: daje 2
 6 7
 1 2
 1 4
