@@ -5,6 +5,7 @@
 using namespace std;
 
 const unsigned int MAXN = 1005;
+const int INFTY = 1000000;
 
 int flow[MAXN][MAXN];	// przep³yw
 int cap[MAXN][MAXN];	// przeustowoœæ
@@ -87,7 +88,7 @@ int maxflow(int s,int t, int n){
 		// koniec przetwarzania jeœli wierzcho³ek t nie jest osi¹galny z s w sieci residualnej
 		if(u<0) break;
 		// wyznaczanie minimalnej przepustowoœci w œcie¿ce
-		min_res_cap = 10000000; // nieskoñczonoœæ
+		min_res_cap = INFTY; // nieskoñczonoœæ
 		while(u>0){
 			min_res_cap = min(min_res_cap, cap[u][v]-flow[u][v]);
 			v = u;
@@ -158,15 +159,18 @@ int tranform_flow(int s, int t, int n){
 }
 
 int max_connectivity(int n){
-	int maxc = 0;
+	int minc = INFTY,tmp;
 	for(int i=1;i<=n;i++){
-		for(int j=i+1;j<=n;j++){
+		for(int j=1;j<=n;j++){
 			//transform_graph(i,j,n);
 			//maxc = max(maxc, maxflow(i*2+1,j*2,n*2));
-			maxc = max(maxc, tranform_flow(i,j,n));
+			if(i!=j){
+				tmp = tranform_flow(i,j,n);
+				minc = min(minc, tmp);
+			}
 		}
 	}
-	return maxc;
+	return minc;
 }
 
 int main(){
@@ -179,8 +183,6 @@ int main(){
 		graph[v].push_back(u);
 		graph_in[v].push_back(u);
 		graph_out[u].push_back(v);
-		cap[u][v] = 1;
-		cap[v][u] = 1;
 	}
 	// maksymalny przep³yw od wierzcho³ka 1 do wierzcho³ka n
 	//int res = maxflow(1,n,n);
