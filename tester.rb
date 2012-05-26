@@ -20,7 +20,7 @@ dir.each do |file_name|
     else
       print "\t" + "error! jest: " + res_line.chop + " powinno byc: " + check_res_line.chop 
     end 
-    puts " czas: " + time.to_s
+    puts " czas: " + (Time.now - beg).to_s
     res.close
     check_res.close
   end
