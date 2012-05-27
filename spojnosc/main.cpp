@@ -1,10 +1,15 @@
+/**********************************************************
+ * Autorzy: Marcin Gecow; Robert Krajewski
+ * Program: wyznaczanie spójnoœci wierzcho³kowej
+ **********************************************************/
+
 #include <cstdio>
 #include <algorithm>
 #include <vector>
 
 using namespace std;
 
-const unsigned int MAXN = 1005;
+const unsigned int MAXN = 1005; // maksymalna liczba wierzcho³ków
 const int INFTY = 1000000; // nieskoñczonoœæ
 
 int flow[MAXN][MAXN];	// przep³yw
@@ -53,6 +58,7 @@ bool bfs(int s, int t,const int& n){
 /**
  * za³o¿enie: s != t
  * G³ówna funkcja dla algorytm Forda-Fulkersona
+ * Wykonuje iteracyjne powiêkszanie œcie¿ek w grafie
  */
 int maxflow(int s,int t, int n){
 	int result = 0,u,v;
