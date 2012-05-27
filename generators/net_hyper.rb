@@ -1,5 +1,5 @@
-sizex = 10
-sizey = 10
+sizex = 5
+sizey = 5
 
 def nodenum(i,j,sx,sy)
   return sx*(i%sx)+(j%sy)+1

@@ -105,7 +105,7 @@ int maxflow(int s,int t, int n){
 // Dla ka¿dego wierzcho³ka v' pod³¹czone s¹ wszystkie krawêdzie
 // dochodz¹ce pierwotnie do v, natomiast z v'' wychodz¹ wszystkie 
 // krawêdzie, które wychodzi³y z v.
-int tranform_flow(int s, int t, int n){
+int transform_flow(int s, int t, int n){
 	int ns,nt,cnt=0;
 	// wyczyœæ dane
 	for(int i=0;i<=2*(n+1);i++){
@@ -159,7 +159,7 @@ int max_connectivity(int n){
 			// dla ka¿dej pary ró¿nych wierzcho³ków oblicz maksymalny przep³wy
 			// wybierz minimaln¹ wartoœæ
 			if(i!=j){
-				minc = min(minc, tranform_flow(i,j,n));
+				minc = min(minc, transform_flow(i,j,n));
 			}
 		}
 	}
